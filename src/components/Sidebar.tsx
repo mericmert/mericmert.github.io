@@ -9,7 +9,7 @@ export default function Sidebar({isHamburgerActive} : {isHamburgerActive : boole
     return (
         <div className={`sidebar z-10 fixed h-full w-0 top-0 bottom-0 left-0 ${isHamburgerActive ? "sidebar-active" : "sidebar-deactive "} bg-[#101117] overflow-hidden`}>
             <section className='sidebar-content mt-32'>
-                <div className=' w-1/3 min-w-[300px] h-screen m-auto flex flex-col items-center pt-32 text-center'>
+                <div className=' w-1/3 min-w-[300px] h-screen m-auto flex flex-col items-center pt-12 text-center'>
                     <span className='text-xl'>What&#39;s the next?</span>
                     <h1 className='text-6xl font-bold'>Get In Touch</h1>
                     <span className='mb-4 mt-2 text-xl'>I&#39;m currently looking for internship and freelance opportunities. My inbox is always open for anyone. Feel free to ask any questions that come to your mind. </span>

@@ -21,7 +21,7 @@ const texts = {
 
 export default function Home() {
 
-
+  const top = useRef(null);
 
   const [isHamburgerActive, setHamburgerActive] = useState<boolean>(false);
   const [heroText, setHeroText] = useState<string[]>(texts.first_intro);
@@ -83,8 +83,8 @@ export default function Home() {
           )
           :
           (
-            <div id="touch" className='min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9'>
-              <Navbar isHamburgerActive={isHamburgerActive} setHamburgerActive={setHamburgerActive} />
+            <div ref={top} className='min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9'>
+              <Navbar isHamburgerActive={isHamburgerActive} setHamburgerActive={setHamburgerActive} top={top} />
               <div className={`w-full mt-12`}>
                 <section className='m-auto w-[50vw] min-w-[350px] flex flex-col justify-center items-center'>
                   <div className='relative w-[190px] h-[190px] rounded-full overflow-hidden'>
