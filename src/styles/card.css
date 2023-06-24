@@ -4,18 +4,26 @@
     transition: all 0.5s cubic-bezier(1,.24,.93,1.01);
 }
 
-.card-img{
-    background-size: cover;
-    background-position: center;
-}
-
-.card:hover{
-    width: 1200px;
-}
-
 .card:hover .card-img{
     background-size: fill;
     background-repeat: no-repeat;
+}
+.card-img{
+    background-size: cover;
+}
+
+@media (min-width:1024px) {
+    .card:hover{
+        width: 1920px;
+    }
+    
+    .card:hover .card-img{
+        background-size: fill;
+        background-repeat: no-repeat;
+    }
+    .card-img{
+        background-size: cover;
+    }
 }
 
 .card-icon{
