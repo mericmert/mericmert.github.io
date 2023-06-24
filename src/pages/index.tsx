@@ -58,7 +58,7 @@ export default function Home() {
       <Head>
         <title>Meriç Mert Bulca</title>
       </Head>
-      <main className={`${inter.className} w-full min-h-screen bg-gradient-to-br from-gradient-color to-[hsl(0,0%,9`}>
+      <main className={`${inter.className} ${isHamburgerActive ? "h-screen " : ""} overflow-hidden w-full min-h-screen bg-gradient-to-br from-gradient-color to-[hsl(0,0%,9`}>
         {isAnimation ?
           (
             <div className='w-full h-screen flex flex-col justify-center items-center font-sans font-thin'>
@@ -83,7 +83,7 @@ export default function Home() {
           )
           :
           (
-            <div ref={top} className='min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9'>
+            <div ref={top} className={`min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9`}>
               <Navbar isHamburgerActive={isHamburgerActive} setHamburgerActive={setHamburgerActive} top={top} />
               <div className={`w-full mt-12`}>
                 <section className='m-auto w-[50vw] min-w-[350px] flex flex-col justify-center items-center'>

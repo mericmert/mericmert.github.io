@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Sidebar({isHamburgerActive} : {isHamburgerActive : boolean}) {
     return (
-        <div className={`sidebar z-10 fixed h-full w-0 top-0 bottom-0 left-0 ${isHamburgerActive ? "sidebar-active" : "sidebar-deactive "} bg-[#101117] overflow-hidden`}>
+        <div className={`sidebar z-10 fixed w-full bottom-0 ${isHamburgerActive ? "sidebar-active" : "sidebar-deactive "} bg-[#101117] overflow-hidden`}>
             <section className='sidebar-content mt-32'>
                 <div className=' w-1/3 min-w-[300px] h-screen m-auto flex flex-col items-center pt-12 text-center'>
                     <span className='text-xl'>What&#39;s the next?</span>

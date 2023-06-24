@@ -186,16 +186,16 @@ Side bar
 */
 
 .sidebar{
-    transition: width 0.7s cubic-bezier(1,.24,.93,1.01);
+    transition: height 0.7s cubic-bezier(1,.24,.93,1.01);
     width: 100%;
 }
 
 .sidebar-active{
-    width: 100% !important;
+    height: 100% !important;
 }
 
 .sidebar-deactive{
-    width: 0 !important;
+    height: 0 !important;
 }
 
 
