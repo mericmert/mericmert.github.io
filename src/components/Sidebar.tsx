@@ -11,7 +11,7 @@ export default function Sidebar({isHamburgerActive} : {isHamburgerActive : boole
             <section className='sidebar-content mt-32'>
                 <div className=' w-1/3 min-w-[300px] h-screen m-auto flex flex-col items-center pt-32 text-center'>
                     <span className='text-xl'>What&#39;s the next?</span>
-                    <h1 className='text-6xl font-bold'>Get In Touch</h1>
+                    <h1 id="touch" className='text-6xl font-bold'>Get In Touch</h1>
                     <span className='mb-4 mt-2 text-xl'>I&#39;m currently looking for internship and freelance opportunities. My inbox is always open for anyone. Feel free to ask any questions that come to your mind. </span>
                     <a href='mailto:mericmertbulca@hotmail.com' className='w-64 h-12 bg-gradient-to-l from-blue-600 to-red-600  rounded-md text-lg font-medium flex justify-center items-center'>Send Mail</a>
                     <div className="icons flex gap-x-6 mt-14">

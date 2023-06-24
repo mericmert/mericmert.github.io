@@ -26,14 +26,14 @@ export default function ProjectCard({image_url, project_name, description, tech_
     }
 
     return (
-        <div onMouseEnter={() => setTimeout(() => showDetails({description, tech_stack}) ,250)} onMouseLeave={() => setTimeout(removeDetails, 250)} className='card h-96 w-48 bg-gray-800 shadow-lg shadow-black'>
+        <div onMouseEnter={() => setTimeout(() => showDetails({description, tech_stack}) ,250)} onMouseLeave={() => setTimeout(removeDetails, 250)} className='card w-48 bg-black shadow-lg shadow-black'>
             <div className='flex h-full w-full flex-col'>
-                <div style={{backgroundImage : `url('/${image_url}')`}} className='card-img w-full h-3/4'>
+                <div style={{backgroundImage : `url('/${image_url}')`}} className='card-img w-full h-[18rem]'>
                 </div>
-                <div className='relative p-3 flex flex-col font-["Ubuntu"] text-[.9rem] card-bottom h-1/4 bg-black'>
+                <div className='relative p-3 flex flex-col font-["Ubuntu"] text-[.9rem] card-bottom min-h-[6rem] w-full bg-black'>
                     <h1><span> (base) projects % </span><span className="text-purple-500">&#39;&#39;{project_name}&#39;&#39;</span></h1>
                     <ArrowCircleRightIcon className="card-icon absolute bottom-1 right-2"/>
-                    <div ref={cardHist} className="card-hist"></div>
+                    <div ref={cardHist} className="card-hist h-full"></div>
                 </div>
             </div>
         </div>
