@@ -13,11 +13,6 @@ export default function Navbar({isHamburgerActive, setHamburgerActive} : {isHamb
     const toggleHamburger = () => {
         setHamburgerActive(!isHamburgerActive);
     }
-    useEffect(() => {
-        if(isHamburgerActive){
-            router.replace("#touch");
-        }
-    }, [isHamburgerActive])
 
     const playSound = () => {
         if (audio) {
