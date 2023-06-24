@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+.shell {
+    font-family: Ubuntu;
+}
+
+#caret {
+    border: 0;
+    padding: 0;
+    outline: none;
+    background-color: rgba(217, 215, 215, 0.28);
+    width: 8px;
+    display: inline-block;
+    font-family: monospace;
+}
+
+#input {
+    display: inline;
+    outline: none;
+    visibility: visible;
+    
+}
+
+/*
+    If you press the Insert key, the vertical line caret will automatically
+    be replaced by a one-character selection.
+  */
+#input::selection {
+    color: #000;
+    background: rgba(221, 221, 221, 0.28);
+}
+
+#input:empty::before {
+    content: ' ';
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#input:focus+#caret {
+    animation: blink 1s steps(5, start) infinite;
+}

@@ -1,0 +1,27 @@
+
+.card{
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(1,.24,.93,1.01);
+}
+
+.card-img{
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover{
+    width: 1200px;
+}
+
+.card:hover .card-img{
+    background-size: fill;
+    background-repeat: no-repeat;
+}
+
+.card-icon{
+    transition: 1s cubic-bezier(1,.24,.93,1.01) ;
+}
+
+.card:hover .card-icon{
+    transform: rotate(180deg);
+}
