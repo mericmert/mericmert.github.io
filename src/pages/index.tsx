@@ -83,7 +83,7 @@ export default function Home() {
           )
           :
           (
-            <div className='min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9'>
+            <div id="touch" className='min-h-screen content-container opacity-0 blur-100 translate-x-[-10px] scale-95 pb-9'>
               <Navbar isHamburgerActive={isHamburgerActive} setHamburgerActive={setHamburgerActive} />
               <div className={`w-full mt-12`}>
                 <section className='m-auto w-[50vw] min-w-[350px] flex flex-col justify-center items-center'>
