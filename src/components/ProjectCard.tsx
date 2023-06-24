@@ -18,7 +18,7 @@ export default function ProjectCard({image_url, project_name, description, tech_
         newLine.innerHTML = `<span class='text-purple-500'>{</span>
             <span class='text-blue-400'>project_description : </span><span class='text-orange-500'>"${project.description}"</span>, <br/>
             <span class='text-blue-400'>tech_stack : </span> <span class='text-blue-500'>[</span><span class='text-orange-500'>${project.tech_stack}</span><span class='text-blue-500'>]</span>
-            <span class='text-purple-500'>}</span>`;
+            <br/><span class='text-purple-500'>}</span>`;
         cardHist.current?.appendChild(newLine);
     }
     const removeDetails = () => {
@@ -26,7 +26,7 @@ export default function ProjectCard({image_url, project_name, description, tech_
     }
 
     return (
-        <div onMouseEnter={() => setTimeout(() => showDetails({description, tech_stack}) ,250)} onMouseLeave={() => setTimeout(removeDetails, 250)} className='card w-[55vw] min-w-[390px] lg:min-w-[50px] lg:w-96  bg-black shadow-lg shadow-black'>
+        <div onMouseEnter={() => setTimeout(() => showDetails({description, tech_stack}) ,250)} onMouseLeave={() => setTimeout(removeDetails, 250)} className='card w-[55vw] min-w-[380px] lg:min-w-[50px] lg:w-96  bg-black shadow-lg shadow-black'>
             <div className='flex h-full w-full flex-col'>
                 <div style={{backgroundImage : `url('/${image_url}')`}} className='card-img w-full h-[18rem]'>
                 </div>
