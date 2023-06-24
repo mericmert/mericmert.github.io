@@ -4,16 +4,12 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import { useRouter } from 'next/router';
 
-export default function Navbar({isHamburgerActive, setHamburgerActive, top} : {isHamburgerActive : boolean, setHamburgerActive : any, top : any}) {
+export default function Navbar({isHamburgerActive, setHamburgerActive} : {isHamburgerActive : boolean, setHamburgerActive : any}) {
 
     const [isSound, setIsSound] = useState<boolean>(false);
     const [audio] = useState(typeof Audio !== "undefined" && new Audio("./homepage-sound.mp3"));
-    const router = useRouter();
 
     const toggleHamburger = () => {
-        if(!isHamburgerActive){
-            top.current?.scrollIntoView({behavior: 'smooth'}); 
-        }
         setHamburgerActive(!isHamburgerActive);
     }
 
@@ -32,7 +28,7 @@ export default function Navbar({isHamburgerActive, setHamburgerActive, top} : {i
     }
 
     return (
-        <nav className='z-20 sticky top-5 min-w-[400px] w-1/2 h-16 bg-[rgba(42,43,56,1)] shadow-lg  m-auto flex items-center justify-between rounded-lg px-6'>
+        <nav className='z-20 sticky top-4 min-w-[400px] w-1/2 h-16 bg-[rgba(42,43,56,1)] shadow-lg  m-auto flex items-center justify-between rounded-lg px-6'>
             <h1 className='text-sm text-gray-200'>MERİÇ MERT BULCA</h1>
             <div className="sound-button absolute right-16">
                 {isSound ? <button onClick={stopSound}><VolumeUpIcon htmlColor='#828894' /></button> : <button onClick={playSound}><VolumeOffIcon htmlColor='#828894' /></button>}
