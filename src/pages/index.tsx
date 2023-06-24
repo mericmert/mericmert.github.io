@@ -42,7 +42,7 @@ export default function Home() {
   }, [isAnimation])
 
   const introTransition = async () => {
-    const DELAY = 4000;
+    const DELAY = 3000;
     setFadeText(true);
     await new Promise(r => setTimeout(r, DELAY));
     setFadeText(false);
@@ -105,9 +105,8 @@ export default function Home() {
                   <span>Hey, my name is Meriç and I am currently a senior CSE student at Sabanci University.
                     I have a strong passion for programming, design and algorithmic problem solving.
                     Around 3-4 years, I&#39;ve been trying to sharpen my skills and gain experience in these fields through hands-on practices
-                    such as web applications, scripts, bots, ML models and so on. I&#39;ve worked @ Siemens as a Full-stack developer last year and I&#39;m currently an
-                    Java developer intern
-                    @ OBSS.
+                    such as web applications, scripts, bots, ML models and so on. I&#39;ve worked @ Siemens as a Full-stack developer last year and I&#39;m currently a
+                    Java developer intern @ OBSS.
                   </span>
                   <div className="bottom-container flex mt-4 gap-x-4">
                     <div className="about-bottom mt-6">
