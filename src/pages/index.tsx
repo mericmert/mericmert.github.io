@@ -137,7 +137,7 @@ export default function Home() {
                     <span className='text-2xl font-bold'>&lt;projects&gt;</span>
                     <hr className='w-[calc(100%-60px)] border-gray-500' />
                   </div>
-                  <div className='mt-2 flex gap-x-4 flex-col lg:flex-row justify-center items-center gap-y-8'>
+                  <div className='mt-2 flex gap-x-4 flex-col lg:flex-row justify-center items-center lg:items-start gap-y-8'>
                     <ProjectCard
                       image_url={"sunft.gif"}
                       project_name={"SUNFT"}

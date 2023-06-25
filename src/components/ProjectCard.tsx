@@ -33,7 +33,7 @@ export default function ProjectCard({image_url, project_name, description, tech_
                 <div className='relative p-3 flex flex-col font-["Ubuntu"] text-[.9rem] card-bottom min-h-[6rem] w-full bg-black'>
                     <h1><span> (base) projects % </span><span className="text-purple-500">&#39;&#39;{project_name}&#39;&#39;</span></h1>
                     <ArrowCircleRightIcon className="card-icon absolute bottom-1 right-2"/>
-                    <div ref={cardHist} className="card-hist h-full"></div>
+                    <div ref={cardHist} className="card-hist"></div>
                 </div>
             </div>
         </div>
